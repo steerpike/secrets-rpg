@@ -102,7 +102,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.5, 0.7, 1 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 0.905882, 0.0431373, 0.0431373, 1 ), Color( 0.976471, 0.968627, 0.968627, 1 ), Color( 0.933333, 0.0352941, 0.0352941, 1 ), Color( 1, 1, 1, 1 ), Color( 0.941176, 0.0470588, 0.0470588, 1 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.584314, 0.364706, 0.364706, 1 ), Color( 0.976471, 0.968627, 0.968627, 1 ), Color( 0.494118, 0.364706, 0.364706, 1 ), Color( 1, 1, 1, 1 ), Color( 0.682353, 0.423529, 0.423529, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
 [node name="BattlerAnim" type="Position2D"]
@@ -111,7 +111,6 @@ script = ExtResource( 2 )
 [node name="Pivot" type="Position2D" parent="."]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pivot"]
-autoplay = "RESET"
 anims/RESET = SubResource( 1 )
 anims/attack = SubResource( 2 )
 anims/die = SubResource( 3 )

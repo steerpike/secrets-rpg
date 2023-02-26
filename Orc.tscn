@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Battler.gd" type="Script" id=1]
 [ext_resource path="res://BattlerAnim.tscn" type="PackedScene" id=2]
 [ext_resource path="res://images/orc-head.png" type="Texture" id=3]
 [ext_resource path="res://basic_attack.tres" type="Resource" id=4]
 [ext_resource path="res://enemy_stats.tres" type="Resource" id=5]
+[ext_resource path="res://StatusEffectContainer.gd" type="Script" id=6]
 
 [node name="Orc" type="Node2D"]
 script = ExtResource( 1 )
@@ -14,6 +15,10 @@ actions = [ ExtResource( 4 ) ]
 [node name="BattlerAnim" parent="." instance=ExtResource( 2 )]
 
 [node name="orc" type="Sprite" parent="BattlerAnim/Pivot" index="2"]
+scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 3 )
+
+[node name="StatusEffectContainer" type="Node" parent="."]
+script = ExtResource( 6 )
 
 [editable path="BattlerAnim"]
